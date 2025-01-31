@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".card").hover(
+          function () {
+            // Mouse enter
+            var imageUrl = $(this).find(".img img").attr("src");
+            $(this).find(".zoomed-card img").attr("src", imageUrl);
+            $(this).find(".zoomed-card").fadeIn();
+          },
+          function () {
+            // Mouse leave
+            $(this).find(".zoomed-card").fadeOut();
+          }
+        );
+      });
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="codes/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- navbar content -->
+    <nav class="navbar">
+      <div class="logo">
+        <h3>Luna</h3>
+      </div>
+      <div class="menu">
+        <ul> 
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="codes/about.html">About Us</a></li>
+          <li><a href="codes/contact.html">Contact Us</a></li>
+          <li><a href="codes/shopNow.html">Shop Now</a></li>
+          <li><a href="codes/bag.html">Your Bag</a></li>
+          <li>
+            <a href="bag.html" class="shopping"
+              ><i class="fas fa-shopping-cart"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+    <!-- content -->
+    <section class="content">
+      <h1>
+        "Luna - Where Elegance <br />
+         Meets Style! ✨"<br />
+      </h1>
+      <p>
+        Explore our stunning collection of bracelets, necklaces,<br /> earrings, and anklet bracelets, designed for girls who love to shine. <br /> Elevate your look with timeless accessories that add the <br /> perfect touch of beauty to every moment!<br />
+      </p>
+      <a href="codes/shopNow.html" target="_blank"> 
+        <button>Shop Now</button>
+      </a>
+    </section>
+    <h1 class="pheading">Best Seller</h1>
+    <section class="sec">
+      <div class="product">
+        <!-- start card -->
+        <div class="card">
+          <div class="img"><img src="imgs/img/first (1).png" alt="ring1" /></div>
+          <div class="descc">Women</div>
+          <div class="titel">Luna Radiance</div>
+          <div class="box">
+            <div class="praice">80$</div>
+            <button class="btn" onclick="window.location.href='codes/product.html?name=Lady%20Watch&description=Stylish%20watch%20for%20women&price=80';">Add To Bag</button>
+          </div>
+        </div>
+        <!-- end card -->
+         <!-- start card -->
+         <div class="card">
+          <div class="img"><img src="imgs/img/first (2).jpeg" alt="" /></div>
+          <div class="descc">Women</div>
+          <div class="titel">Enchanted Ivy</div>
+          <div class="box">
+            <div class="praice">35$</div>
+            <button class="btn" onclick="window.location.href='codes/product.html?name=Lady%20Watch&description=Stylish%20watch%20for%20women&price=80';">Add To Bag</button>
+          </div>
+        </div>
+        <!-- end card -->
+         <!-- start card -->
+         <div class="card">
+          <div class="img"><img src="imgs/img/first (3).jpeg" alt="" /></div>
+          <div class="descc">Women</div>
+          <div class="titel">Blossom Halo</div>
+          <div class="box">
+            <div class="praice">50$</div>
+            <button class="btn" onclick="window.location.href='codes/product.html?name=Lady%20Watch&description=Stylish%20watch%20for%20women&price=80';">Add To Bag</button>
+          </div>
+        </div>
+        <!-- end card -->
+         <!-- start card -->
+         <div class="card">
+          <div class="img"><img src="imgs/img/first (4).jpeg" alt="" /></div>
+          <div class="descc">Women</div>
+          <div class="titel">Midnight Glare</div>
+          <div class="box">
+            <div class="praice">100$</div>
+            <button class="btn" onclick="window.location.href='codes/product.html?name=Lady%20Watch&description=Stylish%20watch%20for%20women&price=80';">Add To Bag</button>
+          </div>
+        <!-- end card -->
+      </div>
+    </section>
+    <div class="blur-background">
+      <div class="zoomed-card">
+        <img src="" alt="Zoomed Card" />
+      </div>
+    </div>
+    <footer >
+      <h3>Enjoy your shopping!</h3>
+    </footer>
+
+  </body>
+</html>
